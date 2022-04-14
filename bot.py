@@ -22,7 +22,7 @@ def main():
         await ctx.reply('Hey there!')
 
     @bot.command()
-    async def commands(ctx):
+    async def showcommands(ctx):
         await ctx.reply('Coming Soon')
 
     @bot.command()
