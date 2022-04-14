@@ -45,6 +45,7 @@ def compile_classes(classes):
     else:
         classes_summary = ""
         for class_ in classes:
+            # https://stackoverflow.com/questions/49889379/google-calendar-api-datetime-format-python
             event_time = datetime.strftime(dtparse(class_["start"]["dateTime"]), format=time_format)
             event_item = class_["summary"] + " - " + event_time
             classes_summary += event_item + "\n"

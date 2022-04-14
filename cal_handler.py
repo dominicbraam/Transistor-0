@@ -20,7 +20,7 @@ def get_events(date):
 
     # calendar_id = "dominic.braam@gmail.com"
     calendar_id = getenv('CAL_ID')
-    print('\n----%s:\n' % calendar_id)
+    # print('\n----%s:\n' % calendar_id)
     eventsResult = service.events().list(
         calendarId=calendar_id,
         timeMin=start_date,
