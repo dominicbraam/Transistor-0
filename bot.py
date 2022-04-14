@@ -22,6 +22,10 @@ def main():
         await ctx.reply('Hey there!')
 
     @bot.command()
+    async def help(ctx):
+        await ctx.reply('Coming Soon')
+
+    @bot.command()
     async def today(ctx):
         reply = create_summary(date.today())
         await ctx.reply(reply)
